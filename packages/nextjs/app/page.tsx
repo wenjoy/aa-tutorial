@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useAccount } from "@alchemy/aa-alchemy/react";
 import type { NextPage } from "next";
 import { BookOpenIcon, BugAntIcon } from "@heroicons/react/24/outline";
+import { SendUOButton } from "~~/components/SendUOButton";
 import { Address } from "~~/components/scaffold-eth";
 
 declare global {
@@ -59,6 +60,10 @@ const Home: NextPage = () => {
               packages/hardhat/contracts
             </code>
           </p>
+        </div>
+
+        <div>
+          <SendUOButton />
         </div>
 
         <div className="flex-grow bg-base-300 w-full mt-16 px-8 py-12">

@@ -53,6 +53,7 @@ const alchemyAccountConfig = createConfig({
   chain: arbitrumSepolia,
   storage: cookieStorage,
 });
+console.log("alchemyAccountConfig", alchemyAccountConfig);
 
 export const ScaffoldEthAppWithProviders = ({ children }: { children: React.ReactNode }) => {
   return (
